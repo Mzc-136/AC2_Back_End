@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #202938;
+}
+
+header {
+    background: #2e96ce;
+    color: white;
+    padding: 25px 8%;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    color: #dce8fa;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid #b8c4d7;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #0e55b3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #174b90;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.secundario {
+    background: #e6edf7;
+    color: #183b70;
+}
+
+.secundario:hover {
+    background: #d5e2f5;
+}
+
+.titulo-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo-lista h2 {
+    margin: 0;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th, td {
+    padding: 13px;
+    border-bottom: 1px solid #e5e9f0;
+    text-align: left;
+}
+
+th {
+    background: #f5f7fb;
+}
+
+#mensagem {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: #18794e;
+}
+
+.erro {
+    color: #c62828;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #667085;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .campos {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .titulo-lista {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

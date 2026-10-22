@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC2 - Controle de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Controle de Projetos</h1>
+            <p>Cadastro e acompanhamento de projetos</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Cadastrar projeto</h2>
+
+            <form id="formProjeto">
+                <label for="descricao">Descrição do projeto</label>
+                <input
+                    type="text"
+                    id="descricao"
+                    maxlength="150"
+                    required
+                    placeholder="Ex.: Desenvolvimento do sistema">
+
+                <div class="campos">
+                    <div>
+                        <label for="dataInicio">Data de início</label>
+                        <input type="date" id="dataInicio" required>
+                    </div>
+
+                    <div>
+                        <label for="dataFim">Data final</label>
+                        <input type="date" id="dataFim" required>
+                    </div>
+                </div>
+
+                <button type="submit">Cadastrar projeto</button>
+            </form>
+
+            <p id="mensagem" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+            <div class="titulo-lista">
+                <h2>Projetos cadastrados</h2>
+                <button type="button" id="btnAtualizar" class="secundario">
+                    Atualizar lista
+                </button>
+            </div>
+
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descrição</th>
+                            <th>Data inicial</th>
+                            <th>Data final</th>
+                            <th>Funcionários</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaProjetos">
+                        <tr>
+                            <td colspan="5">Carregando projetos...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>AC2 — Sistema de Controle de Projetos</p>
+    </footer>
+</body>
+</html>
